@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shakti Agro Traders | Agricultural Products</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f5f8f2;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #176b36;
+      color: white;
+      padding: 15px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #d7ffb8;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 60px 7%;
+      background:
+        linear-gradient(rgba(10,60,25,.65), rgba(10,60,25,.65)),
+        url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 72px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn-primary {
+      background: #8bc34a;
+      color: #123b20;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    /* SECTION */
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #176b36;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .product-icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      color: #176b36;
+      margin-bottom: 8px;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #eaf4e4;
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-box p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    /* CONTACT */
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    }
+
+    .contact-card h3 {
+      color: #176b36;
+      margin-bottom: 10px;
+    }
+
+    .contact-card a {
+      color: #176b36;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #103d21;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul {
+        gap: 15px;
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">🌱 Shakti Agro Traders</div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>Shakti Agro Traders</h1>
+
+      <p>
+        Your trusted destination for agricultural products,
+        crop protection solutions, seeds and farming equipment.
+      </p>
+
+      <a href="#products" class="btn btn-primary">
+        Explore Products
+      </a>
+
+      <a
+        href="https://wa.me/917024899269"
+        class="btn btn-whatsapp"
+        target="_blank">
+        WhatsApp Us
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <section id="products">
+
+    <div class="section-title">
+      <h2>Our Products</h2>
+      <p>Everything you need for modern farming</p>
+    </div>
+
+    <div class="products">
+
+      <div class="product-card">
+        <div class="product-icon">🌱</div>
+        <h3>Vegetable Seeds</h3>
+        <p>
+          Quality seeds for different vegetables and crops.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-icon">🌿</div>
+        <h3>Herbicides</h3>
+        <p>
+          Crop weed-management products for agricultural use.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-icon">🐛</div>
+        <h3>Insecticides</h3>
+        <p>
+          Agricultural solutions for managing crop insects.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-icon">🧪</div>
+        <h3>Pesticides</h3>
+        <p>
+          Crop-protection products for farmers.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-icon">💧</div>
+        <h3>Drip Equipment</h3>
+        <p>
+          Drip irrigation equipment and accessories.
+        </p>
+      </div>
+
+      <div class="product-card">
+        <div class="product-icon">🚿</div>
+        <h3>Spray Pumps</h3>
+        <p>
+          Sprayers, pumps, pipes and related equipment.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="about-box">
+
+      <div class="section-title">
+        <h2>About Us</h2>
+      </div>
+
+      <p>
+        <strong>Shakti Agro Traders</strong> provides a wide range
+        of agricultural products and farming equipment.
+        From seeds and crop-protection products to spray pumps,
+        pipes and drip irrigation equipment, we aim to support
+        farmers with reliable agricultural solutions.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>Visit our shop or contact us on WhatsApp</p>
+    </div>
+
+    <div class="contact-container">
+
+      <div class="contact-card">
+        <h3>📍 Shop Address</h3>
+
+        <p>
+          Main Road, Gangiwara<br>
+          In front of Jain Mandir
+        </p>
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>📱 WhatsApp</h3>
+
+        <p>
+          <a href="https://wa.me/917024899269"
+             target="_blank">
+            +91 70248 99269
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>🌾 Products</h3>
+
+        <p>
+          Seeds • Herbicides • Insecticides •
+          Pesticides • Spray Pumps • Pipes • Drip Equipment
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 Shakti Agro Traders
+    </p>
+
+    <p>
+      Agricultural Products & Farming Equipment
+    </p>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // Simple welcome message
+    console.log("Welcome to Shakti Agro Traders!");
+
+    // Highlight navigation link while scrolling
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+
+      let current = "";
+
+      sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 120;
+
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+
+      });
+
+      navLinks.forEach(link => {
+
+        link.style.fontWeight = "500";
+
+        if (link.getAttribute("href") === "#" + current) {
+          link.style.fontWeight = "bold";
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
